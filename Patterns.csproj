@@ -208,6 +208,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="patterns.pdf" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Architectural\ActiveRecord\" />
