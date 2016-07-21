@@ -44,7 +44,7 @@ chain.Process(user);
 ```
 ###Benefits
 
-Conditions be loaded or added outside
+Conditions can be loaded or added outside
 
 Actions can be runned in parallel, just make true in .ctor
 
