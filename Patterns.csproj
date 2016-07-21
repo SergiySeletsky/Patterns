@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B4DCFF1-FE9F-43F6-B934-7950FA4D758C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Patterns</RootNamespace>
+    <AssemblyName>Patterns</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Architectural\Archetype\ADecoratorRequest.cs" />
+    <Compile Include="Architectural\Archetype\App.cs" />
+    <Compile Include="Architectural\Archetype\BDecoratorRequest.cs" />
+    <Compile Include="Architectural\Archetype\DecoratorRequest.cs" />
+    <Compile Include="Architectural\Archetype\DelegateRequest.cs" />
+    <Compile Include="Architectural\Archetype\Request.cs" />
+    <Compile Include="Architectural\Archetype\RequestFactory.cs" />
+    <Compile Include="Architectural\Archetype\YDelegateRequest.cs" />
+    <Compile Include="Architectural\Archetype\ZDelegateRequest.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Approver.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Director.cs" />
+    <Compile Include="Functional\Chain.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\MainApp.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\President.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Purchase.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\PurchaseEventArgs.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\PurchaseEventHandler.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\VicePresident.cs" />
+    <Compile Include="Behavioral\Command\Calculator.cs" />
+    <Compile Include="Behavioral\Command\CalculatorCommand.cs" />
+    <Compile Include="Behavioral\Command\Command.cs" />
+    <Compile Include="Behavioral\Command\MainApp.cs" />
+    <Compile Include="Behavioral\Command\User.cs" />
+    <Compile Include="Behavioral\Interpreter\Context.cs" />
+    <Compile Include="Behavioral\Interpreter\Expression.cs" />
+    <Compile Include="Behavioral\Interpreter\HundredExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\MainApp.cs" />
+    <Compile Include="Behavioral\Interpreter\OneExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\TenExpression.cs" />
+    <Compile Include="Behavioral\Interpreter\ThousandExpression.cs" />
+    <Compile Include="Behavioral\Mediator\AbstractChatroom.cs" />
+    <Compile Include="Behavioral\Mediator\Beatle.cs" />
+    <Compile Include="Behavioral\Mediator\Chatroom.cs" />
+    <Compile Include="Behavioral\Mediator\MainApp.cs" />
+    <Compile Include="Behavioral\Mediator\NonBeatle.cs" />
+    <Compile Include="Behavioral\Mediator\Participant.cs" />
+    <Compile Include="Behavioral\Memento\MainApp.cs" />
+    <Compile Include="Behavioral\Memento\Memento.cs" />
+    <Compile Include="Behavioral\Memento\ProspectMemory.cs" />
+    <Compile Include="Behavioral\Memento\SalesProspect.cs" />
+    <Compile Include="Behavioral\NullObject\Dog.cs" />
+    <Compile Include="Behavioral\NullObject\IAnimal.cs" />
+    <Compile Include="Behavioral\NullObject\NullAnimal.cs" />
+    <Compile Include="Behavioral\NullObject\Program.cs" />
+    <Compile Include="Behavioral\Observer\IBM.cs" />
+    <Compile Include="Behavioral\Observer\IInvestor.cs" />
+    <Compile Include="Behavioral\Observer\Investor.cs" />
+    <Compile Include="Behavioral\Observer\MainApp.cs" />
+    <Compile Include="Behavioral\Observer\Stock.cs" />
+    <Compile Include="Behavioral\Servant\Ellipse.cs" />
+    <Compile Include="Behavioral\Servant\Movable.cs" />
+    <Compile Include="Behavioral\Servant\MoveServant.cs" />
+    <Compile Include="Behavioral\Servant\Position.cs" />
+    <Compile Include="Behavioral\Servant\Rectangle.cs" />
+    <Compile Include="Behavioral\Servant\Triangle.cs" />
+    <Compile Include="Behavioral\Specification\AndSpecification.cs" />
+    <Compile Include="Behavioral\Specification\ExtensionMethods.cs" />
+    <Compile Include="Behavioral\Specification\ISpecification.cs" />
+    <Compile Include="Behavioral\Specification\NotSpecification.cs" />
+    <Compile Include="Behavioral\Specification\OrSpecification.cs" />
+    <Compile Include="Behavioral\State\Account.cs" />
+    <Compile Include="Behavioral\State\GoldState.cs" />
+    <Compile Include="Behavioral\State\Test.cs" />
+    <Compile Include="Behavioral\State\RedState.cs" />
+    <Compile Include="Behavioral\State\SilverState.cs" />
+    <Compile Include="Behavioral\State\State.cs" />
+    <Compile Include="Behavioral\Strategy\Test.cs" />
+    <Compile Include="Behavioral\Strategy\MergeSort.cs" />
+    <Compile Include="Behavioral\Strategy\QuickSort.cs" />
+    <Compile Include="Behavioral\Strategy\ShellSort.cs" />
+    <Compile Include="Behavioral\Strategy\SortedList.cs" />
+    <Compile Include="Behavioral\Strategy\SortStrategy.cs" />
+    <Compile Include="Behavioral\TemplateMethod\Categories.cs" />
+    <Compile Include="Behavioral\TemplateMethod\DataAccessObject.cs" />
+    <Compile Include="Behavioral\TemplateMethod\MainApp.cs" />
+    <Compile Include="Behavioral\TemplateMethod\Products.cs" />
+    <Compile Include="Behavioral\Visitor\Clerk.cs" />
+    <Compile Include="Behavioral\Visitor\Director.cs" />
+    <Compile Include="Behavioral\Visitor\Element.cs" />
+    <Compile Include="Behavioral\Visitor\Employee.cs" />
+    <Compile Include="Behavioral\Visitor\Employees.cs" />
+    <Compile Include="Behavioral\Visitor\IncomeVisitor.cs" />
+    <Compile Include="Behavioral\Visitor\IVisitor.cs" />
+    <Compile Include="Behavioral\Visitor\MainApp.cs" />
+    <Compile Include="Behavioral\Visitor\President.cs" />
+    <Compile Include="Behavioral\Visitor\VacationVisitor.cs" />
+    <Compile Include="Concurrency\Balking\Example.cs" />
+    <Compile Include="Concurrency\DoubleCheckedLocking\MySingleton.cs" />
+    <Compile Include="Concurrency\Lock\Account.cs" />
+    <Compile Include="Concurrency\ThreadLocalStorage\FooBar1.cs" />
+    <Compile Include="Concurrency\ThreadLocalStorage\FooBar2.cs" />
+    <Compile Include="Creational\AbstractFactory\Factory.cs" />
+    <Compile Include="Creational\AbstractFactory\IFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\IProduct.cs" />
+    <Compile Include="Creational\AbstractFactory\Product\ProductA.cs" />
+    <Compile Include="Creational\AbstractFactory\Product\ProductB.cs" />
+    <Compile Include="Creational\Builder\IProduct.cs" />
+    <Compile Include="Creational\Lazy\App.cs" />
+    <Compile Include="Creational\Multiton\FooMultiton.cs" />
+    <Compile Include="Creational\ObjectPool\ThreadPoolSample.cs" />
+    <Compile Include="Structural\Adapter\Adaptee.cs" />
+    <Compile Include="Structural\Adapter\ITarget.cs" />
+    <Compile Include="Structural\Adapter\Test.cs" />
+    <Compile Include="Structural\Adapter\Adapter.cs" />
+    <Compile Include="Structural\Bridge\Abstraction.cs" />
+    <Compile Include="Structural\Bridge\IBridge.cs" />
+    <Compile Include="Structural\Bridge\ImplementationA.cs" />
+    <Compile Include="Structural\Bridge\ImplementationB.cs" />
+    <Compile Include="Creational\Builder\Builder.cs" />
+    <Compile Include="Creational\Builder\Test.cs" />
+    <Compile Include="Creational\Builder\Director.cs" />
+    <Compile Include="Creational\Builder\IBuilder.cs" />
+    <Compile Include="Structural\Composite\Component.cs" />
+    <Compile Include="Structural\Composite\Composite.cs" />
+    <Compile Include="Structural\Composite\IComponent.cs" />
+    <Compile Include="Structural\Composite\Test.cs" />
+    <Compile Include="Structural\Decorator\Component.cs" />
+    <Compile Include="Structural\Decorator\Client.cs" />
+    <Compile Include="Structural\Decorator\Decorator.cs" />
+    <Compile Include="Structural\Decorator\IComponent.cs" />
+    <Compile Include="Structural\Decorator\Test.cs" />
+    <Compile Include="Creational\FactoryMethod\BibliographyPage.cs" />
+    <Compile Include="Creational\FactoryMethod\ConclusionPage.cs" />
+    <Compile Include="Creational\FactoryMethod\Document.cs" />
+    <Compile Include="Creational\FactoryMethod\EducationPage.cs" />
+    <Compile Include="Creational\FactoryMethod\ExperiencePage.cs" />
+    <Compile Include="Creational\FactoryMethod\IntroductionPage.cs" />
+    <Compile Include="Creational\FactoryMethod\Test.cs" />
+    <Compile Include="Creational\FactoryMethod\Page.cs" />
+    <Compile Include="Creational\FactoryMethod\Report.cs" />
+    <Compile Include="Creational\FactoryMethod\ResultsPage.cs" />
+    <Compile Include="Creational\FactoryMethod\Resume.cs" />
+    <Compile Include="Creational\FactoryMethod\SkillsPage.cs" />
+    <Compile Include="Creational\FactoryMethod\SummaryPage.cs" />
+    <Compile Include="Creational\AbstractFactory\Test.cs" />
+    <Compile Include="Creational\MonoState.cs" />
+    <Compile Include="Creational\Prototype\Color.cs" />
+    <Compile Include="Creational\Prototype\PrototypeManager.cs" />
+    <Compile Include="Creational\Prototype\IPrototype.cs" />
+    <Compile Include="Creational\Prototype\Test.cs" />
+    <Compile Include="Creational\SingletonGeneric.cs" />
+    <Compile Include="Creational\Singleton\LoadBalancer.cs" />
+    <Compile Include="Creational\Singleton\Test.cs" />
+    <Compile Include="Functional\Monad.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\Facade\Bank.cs" />
+    <Compile Include="Structural\Facade\Credit.cs" />
+    <Compile Include="Structural\Facade\Customer.cs" />
+    <Compile Include="Structural\Facade\Loan.cs" />
+    <Compile Include="Structural\Facade\Test.cs" />
+    <Compile Include="Structural\Facade\Mortgage.cs" />
+    <Compile Include="Structural\Flyweigth\IFlyweight.cs" />
+    <Compile Include="Structural\Flyweigth\FlyweightA.cs" />
+    <Compile Include="Structural\Flyweigth\FlyweightB.cs" />
+    <Compile Include="Structural\Flyweigth\FlyweightFactory.cs" />
+    <Compile Include="Structural\Flyweigth\Test.cs" />
+    <Compile Include="Structural\Module\ConsoleDemo.cs" />
+    <Compile Include="Structural\Module\MainModule.cs" />
+    <Compile Include="Structural\Proxy\ISubject.cs" />
+    <Compile Include="Structural\Proxy\Test.cs" />
+    <Compile Include="Structural\Proxy\Subject.cs" />
+    <Compile Include="Structural\Proxy\Proxy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="patterns.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Architectural\ActiveRecord\" />
+    <Folder Include="Architectural\Broker\" />
+    <Folder Include="Architectural\DataMapper\" />
+    <Folder Include="Architectural\Debugging\" />
+    <Folder Include="Architectural\DependencyInjection\" />
+    <Folder Include="Architectural\Interceptor\" />
+    <Folder Include="Architectural\InversionOfControl\" />
+    <Folder Include="Architectural\MessageBroker\" />
+    <Folder Include="Architectural\ModelViewAdapter\" />
+    <Folder Include="Architectural\ModelViewController\" />
+    <Folder Include="Architectural\ModelViewPresenter\" />
+    <Folder Include="Architectural\ModelViewViewModel\" />
+    <Folder Include="Architectural\MultiuseModelView\" />
+    <Folder Include="Architectural\NakedObjects\" />
+    <Folder Include="Architectural\ServiceLocator\" />
+    <Folder Include="Behavioral\Aggregate\" />
+    <Folder Include="Behavioral\BackOff\" />
+    <Folder Include="Behavioral\Blackboard\" />
+    <Folder Include="Behavioral\Iterator\" />
+    <Folder Include="Behavioral\Mock\" />
+    <Folder Include="Concurrency\ActiveObject\" />
+    <Folder Include="Concurrency\BindingProperties\" />
+    <Folder Include="Concurrency\EventBasedAsynchronous\" />
+    <Folder Include="Concurrency\GuardedSuspension\" />
+    <Folder Include="Concurrency\Monitor\" />
+    <Folder Include="Concurrency\Proactor\" />
+    <Folder Include="Concurrency\Reactor\" />
+    <Folder Include="Concurrency\ReadersWriterLock\" />
+    <Folder Include="Concurrency\Scheduler\" />
+    <Folder Include="Concurrency\ThreadPool\" />
+    <Folder Include="Creational\Utility\" />
+    <Folder Include="Structural\FrontController\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Behavioral\State\readme.txt" />
+    <Content Include="Behavioral\Strategy\readme.txt" />
+    <Content Include="Creational\AbstractFactory\readme.txt" />
+    <Content Include="Creational\Builder\readme.txt" />
+    <Content Include="Creational\FactoryMethod\readme.txt" />
+    <Content Include="Creational\Prototype\readme.txt" />
+    <Content Include="Creational\Singleton\readme.txt" />
+    <Content Include="Structural\Adapter\readme.txt" />
+    <Content Include="Structural\Bridge\readme.txt" />
+    <Content Include="Structural\Composite\readme.txt" />
+    <Content Include="Structural\Decorator\readme.txt" />
+    <Content Include="Structural\Facade\readme.txt" />
+    <Content Include="Structural\Flyweigth\readme.txt" />
+    <Content Include="Structural\Proxy\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
