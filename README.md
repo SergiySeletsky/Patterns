@@ -1,8 +1,8 @@
 # Patterns
 ##.NET Patterns by Sergey Seletsky
 
-##My Favorite
-##Functional Chain of Responsibility pattern
+###My Favorite
+###Functional Chain of Responsibility pattern
 
 ###Before
 ```C#
@@ -43,6 +43,9 @@ var user = new User();
 chain.Process(user);
 ```
 ###Benefits
-Conditions be loaded or added outside 
+
+Conditions be loaded or added outside
+
 Actions can be runned in parallel, just make true in .ctor
+
 Chain can be serialized
