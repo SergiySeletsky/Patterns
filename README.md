@@ -11,19 +11,19 @@ if(user.HasPassword)
 {
 
 }
-if else(user.LogOut)
+else if(user.LogOut)
 {
 
 }
-if else(user.FirstName.Contains("Sergey"))
+else if(user.FirstName.Contains("Sergey"))
 {
 
 }
-if else(user.LastName.Lenth > 255)
+else if(user.LastName.Lenth > 255)
 {
 
 }
-if else(user.Age > 18 && user.Age < 35)
+else if(user.Age > 18 && user.Age < 35)
 {
 
 } //more...
