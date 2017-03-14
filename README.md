@@ -1,10 +1,10 @@
 # Patterns
-##.NET Patterns by Sergey Seletsky
+## .NET Patterns by Sergey Seletsky
 
-###My Favorite
-###Functional Chain of Responsibility pattern
+### My Favorite
+### Functional Chain of Responsibility pattern
 
-###Before
+### Before
 ```C#
 var user = new User();
 if(user.HasPassword)
@@ -28,7 +28,7 @@ else if(user.Age > 18 && user.Age < 35)
 
 } //more...
 ```
-###After
+### After
 ```C#
 var chain = new Chain<User> {
     { u => u.HasPassword, u => {  } },
@@ -42,7 +42,7 @@ var chain = new Chain<User> {
 var user = new User();
 chain.Process(user);
 ```
-###Benefits
+### Benefits
 
 Conditions can be loaded or added outside
 
@@ -51,7 +51,7 @@ Actions can be runned in parallel, just make true in .ctor
 Chain can be serialized
 
 
-###Implementation
+### Implementation
 ```C#
 /// <summary>
 /// Functional Chain of Responsibility pattern
